@@ -10,6 +10,8 @@ namespace Calculator
     {
         static void Main(string[] args)
         {
+            Polinomial p = new Polinomial(null);
+            p.Answer(null);
         }
     }
 }
