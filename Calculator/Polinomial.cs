@@ -58,5 +58,6 @@ namespace Calculator
                 return "Empty parentheses";                                     // Return error
             return terms.Substring(opi + 1, cpi - opi -1);
         }
+        //for test
     }
 }
