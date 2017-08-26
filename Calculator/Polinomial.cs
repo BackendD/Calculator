@@ -54,7 +54,7 @@ namespace Calculator
 				if (terms.Substring(i, 1) == "(")
 					opi = i;
 				else if (terms.Substring(i, 1) == ")")
-					return terms.Substring(opi + 1, i - opi -1);
+					return terms.Substring(opi + 1, i - opi - 1);
 			return null;
 		}
 
@@ -73,7 +73,7 @@ namespace Calculator
 					opi.Add(i);
 				else if (Terms.Substring(i, 1) == ")")
 					if (opi.Count > 0)
-						if (opi[opi.Count] > i - 1)
+						if (opi[opi.Count - 1] > i - 1)
 							return false;                                       //Invalid term. Empty parentheses
 						else
 							opi.RemoveAt(opi.Count - 1);
