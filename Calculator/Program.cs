@@ -12,7 +12,7 @@ namespace Calculator
         {
 			while (true)
 			{
-				System.Console.Write("Enter polinomial: f=");
+				System.Console.Write("\nEnter polinomial: f=");
 				string[] input = System.Console.ReadLine().Split(',');
 				Polinomial p = new Polinomial(input[0]);
 				System.Console.Write("The answer is: f=");
