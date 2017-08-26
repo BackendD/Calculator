@@ -10,8 +10,16 @@ namespace Calculator
     {
         static void Main(string[] args)
         {
-            Polinomial p = new Polinomial(null);
-            p.Answer(null);
+			while (true)
+			{
+				System.Console.Write("Enter polinomial: f=");
+				string[] input = System.Console.ReadLine().Split(',');
+				Polinomial p = new Polinomial(input[0]);
+				System.Console.Write("The answer is: f=");
+				string[] values = new string[input.Length - 1];
+				Array.Copy(input, 1, values, 0, values.Length);
+				System.Console.WriteLine(p.Answer(values));
+			}
         }
     }
 }
