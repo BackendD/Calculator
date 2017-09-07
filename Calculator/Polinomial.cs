@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Calculator
 {
-	class Polinomial
+	public class Polinomial
 	{
 		/// <summary>
 		/// Container of polinomial terms
